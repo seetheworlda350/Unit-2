@@ -10,8 +10,7 @@ public class WordGames
 {
     private String word;
 
-    public WordGames(String text)
-    {
+    public WordGames(String text) {
         word = text;
     }
 
@@ -23,7 +22,12 @@ public class WordGames
     {
         // switch first half
         // and second half
-        return "";
+        int mid = word.length() / 2;
+        int length = word.length();
+        String firstHalf = word.substring(0, mid);
+        String secondHalf = word.substring(mid, length);
+        String scrambled = secondHalf + firstHalf;
+        return scrambled;
 
     }
 
@@ -36,8 +40,9 @@ public class WordGames
     public String bananaSplit(int insertIdx, String insertText)
     {
         // Insert insertText at the position
+
         // insertIdx
-        return "";
+        return word;
 
     }
 
