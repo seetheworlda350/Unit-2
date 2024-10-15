@@ -35,5 +35,12 @@ public class Main {
         System.out.println("a".compareTo("H"));
         System.out.println((int)'a');
         System.out.println((int)'b');
+
+        String lastLetter = myFirstName.substring(myFirstName.length() - 1);
+        System.out.println(lastLetter);
+
+        System.out.println(myFirstName.substring(1,myFirstName.length()));
+
+        System.out.println(myFirstName.substring(0, myFirstName.length()-1));
     }
 }
