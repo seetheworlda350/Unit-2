@@ -25,6 +25,8 @@ public class WordGamesTester {
         String word1 = input.nextLine();
 
         // Add random word at index
+        String modifiedWord2 = text1.bananaSplit(idx, word1);
+        System.out.println("Modified word: " + modifiedWord2);
         // Print out the word
 
 
@@ -32,6 +34,8 @@ public class WordGamesTester {
         // Ask for random word
         // Add random word at character
         // Print out the word
+        WordGames toString = new WordGames(word);
+        System.out.println(toString);
 
     }
 }

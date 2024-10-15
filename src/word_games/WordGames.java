@@ -40,10 +40,10 @@ public class WordGames
     public String bananaSplit(int insertIdx, String insertText)
     {
         // Insert insertText at the position
-
+        StringBuilder modifiedWord = new StringBuilder(word);
+        modifiedWord.insert(insertIdx, insertText);
+        return modifiedWord.toString();
         // insertIdx
-        return word;
-
     }
 
     /**
@@ -65,7 +65,7 @@ public class WordGames
     public String toString()
     {
         // Games[word]
-        return "";
+        return "[" + word + "]";
 
     }
 
